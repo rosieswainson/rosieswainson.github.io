@@ -1,0 +1,163 @@
+/* ------------ WEBSITE STYLE GUIDE ------------ */
+
+html {
+    box-sizing: border-box;
+    background-color: #FDFEFE;
+}
+
+body {
+    display: block;
+    margin-left: 87px;
+    margin-right: 87px;
+}
+
+section {
+    display: block;
+}
+
+.header, .colour-info, .font-info, .text-styles {
+    text-align: center;
+    margin: 20px auto;
+}
+
+p, li, span, a {
+    font-family: 'Poppins', sans-serif;
+}
+
+#page-heading {
+    font-family: 'Shrikhand', cursive, serif;
+    font-size: 50px;
+}
+
+nav {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: underline;
+    color:#0DBAA6;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color:#FA790F;
+}
+
+nav a:active {
+    background-color: #F7C23B;
+}
+
+.h1 {
+    font-family: 'Shrikhand', cursive, serif;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Baskervville', serif;
+}
+
+.container {
+    border: 2px #1598cb solid;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.colour-info .siargao, .colour-info h2, .colour-info span {
+    text-align: center;
+}
+
+.colour-container {
+    width: 100%;
+}
+
+.colour-panel {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 20px 20px;
+    min-height: 100px;
+}
+
+.blue-green {
+    background-color: #1598cb;
+}
+
+.keppel {
+    background-color: #0DBAA6;
+}
+
+.orange-yellow {
+    background-color: #F7C23B;
+}
+
+.safety-orange {
+    background-color: #FA790F;
+}
+
+.portland-orange {
+    background-color: #F8643F;
+}
+
+.font-type {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    vertical-align: top;
+}
+
+.font-type:hover, .text-panel:hover {
+    background-color: #F8643F;
+}
+
+.text-panel {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+}
+
+.font-label {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.shrikhand {
+    font-family: 'Shrikhand', cursive, serif;
+}
+
+.baskervville {
+    font-family: 'Baskervville', serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.regular {
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-panel h1 {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Shrikhand', cursive, serif;
+}
+
+.text-panel h2 {
+    font-weight: 500;
+    font-family: 'Baskervville', serif;
+}
+
+.text-panel p {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
