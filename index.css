@@ -1,0 +1,179 @@
+/* ---------- UNIVERSAL STYLES ---------- */
+
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+.homepage-subheading-text {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: url(./Heading\ Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media only screen and (max-width: 425px) {
+    .homepage-subheading-text {
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+} 
+
+@media only screen and (max-width: 375px) {
+    .homepage-subheading-text {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .homepage-subheading-text {
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+}
+
+/* ---------- HEADER STYLES ---------- */
+
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rosie-logo {
+    width: 30%;
+    margin-top: 1.5rem;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media only screen and (max-width: 768px) {
+    .rosie-logo {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .rosie-logo {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .rosie-logo {
+        width: 75%;
+    }
+}
+
+
+/* ---------- PROJECTS FLEXBOX ---------- */
+
+.project-container {
+    width: 100%;
+}
+
+.project-grid-container {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    background-image: url(./Pink\ copy.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.project h3 {
+    margin-top: 2rem;
+}
+
+.project {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.project img, .project p {
+    width: 25rem;
+    height: auto;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media only screen and (max-width: 768px) {
+    .project img, .project p {
+        width: 18rem;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .project {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .project img, .project p {
+        width: 23rem;
+        height: auto;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .project img, .project p {
+        width: 20rem;
+        height: auto;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .project img, .project p {
+        width: 15rem;
+        height: auto;
+        font-size: 0.75rem;
+    }
+}
+
+
+
