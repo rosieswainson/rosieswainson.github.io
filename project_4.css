@@ -1,0 +1,171 @@
+/* ----------- COMPANY PAGE ----------- */
+
+/* ---------------- Universal Styles ---------------- */
+
+/* * {
+    box-sizing: border-box;
+} */
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+#heading {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#sub-heading {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+/* ---------------- Header/Nav ---------------- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    /* border: 1px solid salmon; */
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+/*
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+*/ 
+
+.navbar a {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    color: rgb(16, 93, 16);
+    padding: 1.5rem;
+}
+
+.main-container {
+    position: relative;
+    top: 8.125rem;
+}
+
+/* ---------------- About ---------------- */
+
+
+.about-container {
+    background-image: url(./Hero-Image\ .jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+    height: 31.25rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid salmon; */
+}
+
+.about-information {
+    width: 75%;
+    background: rgba(255,255,255, 0.8); 
+    padding: 1rem;
+    margin: 2rem;
+    opacity: 0.8;
+}
+
+
+
+/* ---------------- Memberships ---------------- */
+
+.memberships-container {
+    max-width: 1920px;
+    padding-top: 2rem;
+    /* border: 1px solid salmon; */
+}
+
+.membership-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.membership-type img {
+    width: 25rem;
+    height: auto;
+}
+
+/* ---------------- What's Included? ---------------- */
+
+.whats-included-container {
+    max-width: 1920px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.whats-included {
+    background-image: url(./Coffee.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.whats-included .list {
+    background: rgba(255,255,255, 0.8);
+    opacity: 0.8;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+/* .whats-included img {
+    height: 500px;
+} */
+
+/* ---------------- Team ---------------- */
+
+.team-container {
+    max-width: 1920px;
+    /* border: 1px solid salmon; */
+}
+
+.team-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+

@@ -1,0 +1,97 @@
+/* --------- HTML and CSS Cheatsheet --------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 218, 242);
+    font-family: Helvetica, sans-serif;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: orangered;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+}
+
+li a {
+    background-color: orangered;
+    font-family: monospace;
+    font-size: 14px;
+    text-decoration: underline;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+li a:hover {
+    color: blueviolet;
+}
+
+.headings {
+    font-family: 'Courier New', Courier, monospace;
+    color: blueviolet;
+}
+
+main {
+    margin: 50px 20px;
+}
+
+table {
+    border: 1px lightcoral solid;
+}
+
+.tableheading {
+    font-family: monospace;
+    font-size: 18px;
+    background-color: orangered;
+    color: rgb(253, 218, 242);
+}
+
+td {
+    border-top: 1px blueviolet dashed;
+}
+
+.sect1 {
+    display: block;
+    width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.float-parent-element {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.float-child-element {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+
+.sect4 {
+    display: block;
+    width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}

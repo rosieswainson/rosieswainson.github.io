@@ -1,0 +1,204 @@
+<!-- HTML and CSS Cheatsheet -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./project_2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
+    <title>Project 2 - CSS Cheatsheet</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">HTML and CSS Cheatsheet</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#elements">HTML Elements and Structure</a></li>
+                <li><a href="#htmltables">HTML Table Tags</a></li>
+                <li><a href="#attributes">HTML Table Attributes</a></li>
+                <li><a href="#csssyntax">CSS Syntax and Selectors</a></li>
+                <li><a href="./index.html">Github Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Elements and Structure Section-->
+        <section class="sect1">
+            <h2 class="headings" id="elements">HTML Elements and Structure</h2>
+            <p>HTML (HyperText Markup Language) is used to give content to a web page and instructs web browsers on how to structure that content. The content of an HTML element is the information between the opening and closing tags of an element.</p>
+            <table class="htmlelements">
+                <thead class="tableheading">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody class="tablebody">
+                    <tr>
+                        <td>&lt;html&gt;</td>
+                        <td>HTML</td>
+                        <td>All content/structure for an HTML document should be contained between the opening and closing HTML tags.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;head&gt;</td>
+                        <td>Head</td>
+                        <td>A container for metadata (data about data) and is placed between the HTML tag and the BODY tag.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;title&gt;</td>
+                        <td>Title</td>
+                        <td>The Title tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;body&gt;</td>
+                        <td>Body</td>
+                        <td>The Body tag defines the document's body. The Body element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>Header</td>
+                        <td>The Header element represents a container for introductory content or a set of navigational links.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>Main</td>
+                        <td>The Main tag specifies the main content of a document. There must not be more than one Main element in a document. The Main element must NOT be a descendant of an Article, Aside, Footer, Header, or Nav element.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>Footer</td>
+                        <td>The Footer tag defines a footer for a document or section. There can be more than one Footer in one documet.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Div</td>
+                        <td>The Div tag defines a division or a section in an HTML document. The Div tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. The Div tag is easily styled by using the class or id attribute. Any sort of content can be put inside the Div tag!</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>P</td>
+                        <td>The P tag defines a paragraph. Browsers automatically add a single blank line before and after each P element.</td>
+                    </tr>
+                </tbody>
+                </table>
+            </section>
+
+            <section class="float-parent-element">
+            <!--HTML Table Tags Section-->
+                <section class="float-child-element">
+                    <h2 class="headings" id="htmltables">HTML Table Tags</h2>
+                    <table class="tables">
+                        <thead class="tableheading">
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tablebody">
+                            <tr>
+                                <td>&lt;table&gt;</td>
+                                <td>Table</td>
+                                <td>The wrapper element for all HTML tables.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;thead&gt;</td>
+                                <td>Table Head</td>
+                                <td>The set of rows defining the column headers in a table</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tbody&gt;</td>
+                                <td>Table Head</td>
+                                <td>The set of rows containing actual table data.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tr&gt;</td>
+                                <td>Table Row</td>
+                                <td>The table row container.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;td&gt;</td>
+                                <td>Table Data</td>
+                                <td>The table row container.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tfoot&gt;</td>
+                                <td>Table Foot</td>
+                                <td>The set of rows defining the footer in a table.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                
+
+                <!--Table Attributes Section-->
+                <section class="float-child-element">
+                    <h2 class="headings" id="attributes">HTML Table Attributes</h2>
+                    <table class="tableattr">
+                        <thead class="tableheading">
+                            <tr>
+                                <th>Attributes</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tablebody">
+                            <tr>
+                                <td>&lt;colspan&gt;</td>
+                                <td>Column Span</td>
+                                <td>Defines how many columns a td element should span.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;rowspan&gt;</td>
+                                <td>Row Span</td>
+                                <td>Defines how many rows a td element should span.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        
+        <!--CSS Syntax and Selectors-->
+        <section class="sect4">
+            <h2 class="headings" id="csssyntax">CSS Syntax and Selectors</h2>
+            <p>CSS classes can be reusable and applied to many elements. Class selectors are denoted with a period . followed by the class name. CSS ID selectors should be unique and used to style only a single element. ID selectors are denoted with a hash sign # followed by the id name.</p>
+            <table class="csssyntax">
+                <thead class="tableheading">
+                    <tr>
+                        <th>Selector</th>
+                        <th>Example</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody class="tablebody">
+                    <tr>
+                        <td>Element Selector</td>
+                        <td>p</td>
+                        <td>The element selector selects all elements with the specified element name. For example this will select and style all &lt;p&lt; elements</td>
+                    </tr>
+                    <tr>
+                        <td>Class Selector</td>
+                        <td>.species</td>
+                        <td>Selects all elements with class="species"</td>
+                    </tr>
+                    <tr>
+                        <td>ID Selector</td>
+                        <td>#sunflower</td>
+                        <td>Selects the element with id="sunflower"</td>
+                    </tr>
+                    <tr>
+                        <td>Descendant Selector</td>
+                        <td>flowers ol li</td>
+                        <td>Selects the element with id="sunflower"</td>
+                    </tr>
+                </tbody>
+            </table>  
+        </section>  
+    </main>
+    
+</body>
+</html>
