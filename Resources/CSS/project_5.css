@@ -18,14 +18,15 @@ p {
 
 #heading {
     font-family: 'Shrikhand', cursive;
-    font-size: 2rem;
-    color: rgb(194,34,142);
+    font-size: 2.25rem;
+    color: rgb(230, 55, 172);
+    text-shadow: 0.2rem 0.2rem rgb(230, 230, 230)
 }
 
 #sub-heading {
     font-family: 'Shrikhand', cursive;
     font-size: 1.5rem;
-    color: rgb(194,34,142);
+    color: rgb(230, 55, 172);
 }
 
 .main-container {
@@ -74,7 +75,7 @@ header {
 .navbar a {
     font-family: 'Shrikhand', cursive;
     font-size: 1rem;
-    color: rgb(16, 93, 16);
+    color: rgb(31, 115, 54);
     padding: 0 1.5rem;
 }
 
@@ -109,7 +110,7 @@ header {
 .about-container {
     width: 100%;
     margin: 0 auto;
-    background-color: #da8c3f;
+    background-color: rgb(245, 139, 0);
     color: whitesmoke;
     padding-bottom: 1.5rem;
     display: flex;
@@ -120,6 +121,7 @@ header {
 
 .about-info {
     width: 75%;
+    font-weight: bold;
 }
 /* ---------------- About Media @ ---------------- */
 
@@ -144,13 +146,13 @@ header {
 } 
 
 .next-meet-up-container a {
-    color:rgb(194,34,142);
+    color:rgb(230, 55, 172);
 }
 
 .button {
     font-family: 'Shrikhand', cursive;
     font-size: 1.5rem;
-    background-color: rgb(194,34,142);
+    background-color: rgb(230, 55, 172);
     border: none;
     margin: 1.5rem 0;
     padding: 1rem;
@@ -158,7 +160,7 @@ header {
 }
 
 .button:hover {
-    background-color: #da8c3f;
+    background-color: rgb(245, 139, 0);
 }
 
 .button a {
@@ -167,7 +169,7 @@ header {
 }
 
 .button a:hover {
-    text-shadow: 0.2rem 0.2rem rgb(194,34,142);
+    text-shadow: 0.2rem 0.2rem rgb(230, 55, 172);
 }
 
 /* ---------------- Meet Up Media @ ---------------- */
@@ -184,7 +186,7 @@ header {
 .image-gallery-container {
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(16, 93, 16);
+    background-color: rgb(31, 115, 54);
 }
 
 .gallery {
@@ -248,7 +250,7 @@ header {
 
 
 footer {
-    background-color: #da8c3f;
+    background-color: rgb(245, 139, 0);
     color: whitesmoke;
     text-align: center;
     display: flex;
