@@ -1,0 +1,257 @@
+/* ---------------- RESPONSIVE PAGE ---------------- */
+
+/* ---------------- Universal Styles ---------------- */
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0.5rem;
+}
+
+#heading {
+    font-family: 'Shrikhand', cursive;
+    font-size: 2rem;
+    color: rgb(194,34,142);
+}
+
+#sub-heading {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.5rem;
+    color: rgb(194,34,142);
+}
+
+.main-container {
+    max-width: 1920px;
+    text-align: center;
+}
+
+/* ---------------- Universal Media @ ---------------- */
+
+@media only screen and (max-width: 320px) {
+    #heading {
+        font-size: 1.5rem;
+    }
+
+    #sub-heading {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+}
+
+/* ---------------- Header/Nav ---------------- */
+
+
+header {
+    top: 0;
+    height: 10rem;
+    width: 100%;
+    background-image: url(./Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    /* width: 100%; */
+    padding-bottom: 1.5rem;
+
+}
+
+.navbar a {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1rem;
+    color: rgb(16, 93, 16);
+    padding: 0 1.5rem;
+}
+
+/* ---------------- Header Media @ ---------------- */
+
+@media only screen and (max-width: 320px) {
+    header {
+        height: 7rem;
+        background-image: url(./Logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 7rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .navbar a {
+        padding: 0 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar a {
+        padding: 0 1rem;
+    }
+}
+
+/* ---------------- About ---------------- */
+
+.about-container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #da8c3f;
+    color: whitesmoke;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.about-info {
+    width: 75%;
+}
+/* ---------------- About Media @ ---------------- */
+
+/*
+@media only screen and (max-width: 480px) {
+    .about-container {
+        width: 75%;
+    }
+} */
+
+
+/* ---------------- Meet Up Info ---------------- */
+
+.next-meet-up-container {
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.next-meet-up-container a {
+    color:rgb(194,34,142);
+}
+
+.button {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.5rem;
+    background-color: rgb(194,34,142);
+    border: none;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.button:hover {
+    background-color: #da8c3f;
+}
+
+.button a {
+    color: whitesmoke;
+    text-shadow: 0.2rem 0.2rem rgb(16, 93, 16);
+}
+
+.button a:hover {
+    text-shadow: 0.2rem 0.2rem rgb(194,34,142);
+}
+
+/* ---------------- Meet Up Media @ ---------------- */
+
+@media only screen and (max-width: 320px) {
+    .button {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+}
+
+/* ---------------- Image Gallery ---------------- */
+
+.image-gallery-container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(16, 93, 16);
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+
+.gallery img {
+    width: 20rem;
+    height: auto;
+    padding: 1.5rem 0;
+}
+
+
+/* ---------------- Host Info ---------------- */
+
+.hosts-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.host-info-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+
+}
+
+.host {
+    width: 30%;
+
+}
+
+.host img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+} 
+
+/* ---------------- Host Media @ ---------------- */
+
+@media only screen and (max-width: 320px) {
+    .host-container {
+        width: 100%;
+    }
+    
+    .host img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+    } 
+}
+
+/* ---------------- Footer ---------------- */
+
+
+footer {
+    background-color: #da8c3f;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
