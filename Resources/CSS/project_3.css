@@ -15,7 +15,10 @@ section {
     display: block;
 }
 
-.header, .colour-info, .font-info, .text-styles {
+.header, 
+.colour-info, 
+.font-info, 
+.text-styles {
     text-align: center;
     margin: 20px auto;
 }
@@ -64,7 +67,9 @@ h2 {
     margin: 10px auto;
 }
 
-.colour-info .siargao, .colour-info h2, .colour-info span {
+.colour-info .siargao, 
+.colour-info h2, 
+.colour-info span {
     text-align: center;
 }
 
@@ -107,7 +112,8 @@ h2 {
     vertical-align: top;
 }
 
-.font-type:hover, .text-panel:hover {
+.font-type:hover, 
+.text-panel:hover {
     background-color: #F8643F;
 }
 

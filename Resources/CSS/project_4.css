@@ -74,7 +74,7 @@ header {
 
 
 .about-container {
-    background-image: url(./Hero-Image\ .jpg);
+    background-image: url(../Images/Hero-Image.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,7 +129,7 @@ header {
 }
 
 .whats-included {
-    background-image: url(./Coffee.jpg);
+    background-image: url(../Images/Coffee.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
