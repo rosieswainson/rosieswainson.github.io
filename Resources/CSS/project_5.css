@@ -56,7 +56,7 @@ header {
     top: 0;
     height: 10rem;
     width: 100%;
-    background-image: url(./Logo.png);
+    background-image: url(../Images/Logo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10rem;
@@ -83,7 +83,7 @@ header {
 @media only screen and (max-width: 320px) {
     header {
         height: 7rem;
-        background-image: url(./Logo.png);
+        background-image: url(../Images/Logo.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 7rem;
