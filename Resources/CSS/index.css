@@ -5,6 +5,7 @@
 } */
 
 body {
+    max-width: 1920px;
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -12,92 +13,96 @@ body {
     font-weight: 400;
     text-align: center;
     text-decoration: none;
-}
-
-.homepage-subheading-text {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    background-image: url(../Images/Heading\ Background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 2rem;
-    padding: 1rem 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    background-color: hsl(0, 0%, 96%);
 }
 
 /* ---------- MEDIA QUERIES ---------- */
 
 @media only screen and (max-width: 425px) {
-    .homepage-subheading-text {
-        font-size: 1.5rem;
-        padding: 1rem 1.5rem;
-        margin-left: 0.75rem;
-        margin-right: 0.75rem;
-    }
+ /* color: red*/
 } 
 
 @media only screen and (max-width: 375px) {
-    .homepage-subheading-text {
-        font-size: 1.5rem;
-        padding: 0.5rem 1rem;
-        margin-left: 0.75rem;
-        margin-right: 0.75rem;
-    }
+/* color: red*/
 }
 
 @media only screen and (max-width: 320px) {
-    .homepage-subheading-text {
-        font-size: 1.5rem;
-        padding: 1rem 1.5rem;
-        margin-left: 0.75rem;
-        margin-right: 0.75rem;
-    }
+/* color: red*/
 }
 
 /* ---------- HEADER STYLES ---------- */
 
 .header-container {
-    width: 100%;
+    max-width: 1920px;
+    padding: 0 3rem;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
+    justify-content: space-between;
+    background-color: hsl(220, 80%, 68%); 
 }
 
-.rosie-logo {
-    width: 30%;
-    margin-top: 1.5rem;
+.header-container a,
+h1 {
+    color: hsl(7, 88%, 81%);
 }
+
+#contact {
+    font-weight: 700;
+}
+
 
 /* ---------- MEDIA QUERIES ---------- */
 
 @media only screen and (max-width: 768px) {
-    .rosie-logo {
-        width: 75%;
-    }
+/* color: red*/
 }
 
 @media only screen and (max-width: 425px) {
-    .rosie-logo {
-        width: 75%;
-    }
+/* color: red*/
 }
 
 @media only screen and (max-width: 320px) {
-    .rosie-logo {
-        width: 75%;
-    }
+/* color: red*/
 }
 
+/* ---------- ABOUT ME SECTION ---------- */
+
+.about-me-container {
+    width: 75%;
+    margin: 4rem auto;
+    /* border: 1px solid red;*/
+}
+
+.about-me-container h2 {
+    color: hsl(12, 87%, 64%);
+    text-align: left;
+    /* margin-top: 2rem;*/
+    padding-left: 5rem;
+}
+
+.about-me {
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    text-align: left;
+}
+
+.about-me p {
+    padding-right: 5rem;
+    text-align: left;
+}
+
+.about-me img {
+    width: 22.5rem;
+    border-radius: 4rem;
+    height: auto;
+}
 
 /* ---------- PROJECTS FLEXBOX ---------- */
 
 .project-container {
-    width: 100%;
+    max-width: 1920px;
 }
 
 .project-grid-container {
@@ -106,19 +111,6 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-
-.project-link {
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-weight: 700;
-    background-image: url(../Images/Pink\ copy.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;  
-    border-radius: 2rem;
-    padding: 0.5rem 1rem;
 }
 
 .project h3 {
@@ -130,9 +122,20 @@ body {
     padding: 1rem;
 }
 
-.project img, .project p {
-    width: 25rem;
+.project img,
+.project p {
+    width: 22.5rem;
     height: auto;
+    transition: width 400ms;
+}
+
+.project img {
+    border-radius: 4rem;
+}
+
+.project img:hover {
+    width: 21rem;
+
 }
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -174,6 +177,3 @@ body {
         font-size: 0.75rem;
     }
 }
-
-
-
