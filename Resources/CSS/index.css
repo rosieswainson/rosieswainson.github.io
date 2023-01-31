@@ -11,9 +11,10 @@ body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    color: #242424;
     text-align: center;
     text-decoration: none;
-    background-color: hsl(0, 0%, 96%);
+    background-color: hsl(274, 31%, 95%);
 }
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -34,16 +35,36 @@ body {
 
 .header-container {
     max-width: 1920px;
-    padding: 0 3rem;
+    padding: 1rem 3rem;
+
+}
+
+.nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: hsl(220, 80%, 68%); 
 }
 
-.header-container a,
-h1 {
-    color: hsl(7, 88%, 81%);
+.rosie-logo {
+    width: 3rem;
+    height: auto;
+    transition: width 400ms;
+}
+
+.rosie-logo:hover {
+    width: 2.75rem;
+}
+
+.header-container a {
+    font-style: normal;
+    color: hsl(9, 84%, 58%);
+    transition: color 400ms;
+    transition: font-style 400ms;
+}
+
+.header-container a:hover {
+    font-style: italic;
+    color: #d278ec;
 }
 
 #contact {
@@ -69,12 +90,13 @@ h1 {
 
 .about-me-container {
     width: 75%;
-    margin: 4rem auto;
+    margin: 2rem auto;
     /* border: 1px solid red;*/
 }
 
 .about-me-container h2 {
-    color: hsl(12, 87%, 64%);
+    font-size: 2rem;
+    color: hsl(9, 84%, 58%);
     text-align: left;
     /* margin-top: 2rem;*/
     padding-left: 5rem;

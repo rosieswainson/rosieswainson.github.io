@@ -1,0 +1,159 @@
+/* ================ UNIVERSAL STYLES ================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+
+  body {
+    background-color: #f8edeb;
+  }
+
+  .colors {
+    color: #ffb5a7;
+    color: #fcd5ce;
+    color: #f8edeb;
+    color: #f9dcc4;
+    color: #fec89a;
+    color: #463f3a;
+  }
+
+/* ================ HEADER STYLES ================ */
+
+
+  header {
+    max-width: 1920px;
+    margin-top: 0px;
+    padding: 1rem 2rem;
+    background-color: #faac68;
+  }
+
+  #heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f8edeb;
+  }
+
+/* ================ HERO STYLES ================ */
+
+
+  .hero-image {
+    background-image: url(../Images/kaylee-brayne-positive-affirmations.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 30rem; 
+    margin: 0 auto;
+  }
+
+/* ================ ABOUT STYLES ================ */
+
+  .about-container {
+    max-width: 60rem; 
+    padding-top: 2rem; 
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-panel {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #sub-heading {
+    color: #463f3a;
+  }
+
+/* ================ AFFIRMATION STYLES ================ */
+
+  .affirmation-container {
+    max-width: 70rem; 
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .affirmation-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .love-aff, 
+  .succ-aff,
+  .happ-aff,
+  .abun-aff {
+    width: 25rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #f9dcc4;
+    /* border: 0.25rem solid #fa9f8d; */
+  }
+
+  .love-aff h3, 
+  .succ-aff h3,
+  .happ-aff h3,
+  .abun-aff h3 {
+    margin: 1rem;
+    color: #463f3a;
+  } 
+
+  .button {
+    background-color: #fa9f8d;
+    color: #463f3a;
+    cursor: pointer;
+    border-radius: 10rem;
+  }
+
+  #love-button,
+  #succ-button,
+  #happ-button,
+  #abun-button {
+    width: 10.5rem;
+    height: 3.7rem;
+    border: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    transition: 0.4s;
+  }
+
+  #love-button:hover,
+  #succ-button:hover,  
+  #happ-button:hover,
+  #abun-button:hover {
+    opacity: 1
+}
+
+  .love-aff p, 
+  .succ-aff p,
+  .happ-aff p,
+  .abun-aff p {
+    font-size: 1.25rem;
+    margin: 1rem;
+  } 
+
+/* ================ FOOTER STYLES ================ */
+
+  footer {
+    max-width: 1920px;
+    padding: 1rem 2rem;
+    background-color: #faac68;
+  }
+
+  #footer-heading {
+    color: #f8edeb;
+  }
+
+
+

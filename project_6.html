@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Resources/CSS/project_6.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./Images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./Images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./Images/android-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./Images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./Images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./Images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Images/android-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./Images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./Images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./Images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon-16x16.png">
+    <link rel="manifest" href="./Images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Javascript Number Guesser</title>
+  </head>
+
+  <body>
+    <div class="game-container">
+      <header>
+        <h1 id="main-heading">Number Guesser!</h1>
+      </header>
+
+      <div class="instructions">
+        <div class="instruction">
+          <h3>Step 1</h3>
+          <p>Input a number between 0 and 9</p>
+        </div>
+        <div class="instruction">
+          <h3>Step 2</h3>
+          <p>Click "Make a Guess" to submit your guess and see who won the round.</p>
+        </div>
+        <div class="instruction">
+          <h3>Step 3</h3>
+          <p>Click "Next Round" to play again.</p>
+        </div>
+      </div>
+      
+      <div class="rounds">
+        <p class="round-label">Round <span id="round-number">1</span></p>
+        <p class="guess-label">Target Number: <span id="target-number">?</span></p>
+      </div>
+
+      <div class="guessing-area">
+        <div class="guess computer-guess">
+          <div class="guess-title">
+            <p class="guess-label">Computer</p>
+            <p class="score-label">Score: <span id="computer-score">0</span></p>
+          </div>
+          <p id="computer-guess">?</p>
+          <p class="winning-text" id="computer-wins"></p>
+        </div>
+        <div class="guess human-guess">
+          <div class="guess-title">
+            <p class="guess-label">You</p>
+            <p class="score-label">Score: <span id="human-score">0</span></p>
+          </div>
+          <input type="number" id="human-guess" min="0" max="9" value="0">
+          <div class="number-controls">
+            <button class="number-control left" id="subtract" disabled>-</button>
+            <button class="number-control right" id="add">+</button>
+          </div>
+          <button class="button" id="guess">Make a Guess</button>
+        </div>
+    
+      </div>
+
+      <div class="next-round-container">
+        <button class="button" id="next-round" disabled>Next Round</button>
+      </div>
+
+    </div>
+    
+  
+    <script src="./Resources/Javascript/game_6.js"></script>
+    <script src="./Resources/Javascript/script_6.js"></script>
+
+  </body>
+</html>
