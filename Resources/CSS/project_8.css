@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+
+  body {
+    max-width: 1920px;
+  }
+
+header h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+  .main-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  .wireframes,
+  .hifi,
+  .prototype {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .wireframes img,
+  .hifi img,
+  .prototype iframe {
+    width: 35rem;
+    margin: 3rem 0px;
+  }
