@@ -19,24 +19,23 @@ body {
 
 /* ---------- MEDIA QUERIES ---------- */
 
-@media only screen and (max-width: 425px) {
- /* color: red*/
+/* @media only screen and (max-width: 425px) {
+
 } 
 
 @media only screen and (max-width: 375px) {
-/* color: red*/
+
 }
 
 @media only screen and (max-width: 320px) {
-/* color: red*/
-}
+
+} */
 
 /* ---------- HEADER STYLES ---------- */
 
 .header-container {
     max-width: 1920px;
     padding: 1rem 3rem;
-
 }
 
 .nav-bar {
@@ -75,16 +74,18 @@ body {
 /* ---------- MEDIA QUERIES ---------- */
 
 @media only screen and (max-width: 768px) {
-/* color: red*/
+    .header-container {
+        padding: 1rem 2rem;
+    }
 }
 
-@media only screen and (max-width: 425px) {
-/* color: red*/
+/* @media only screen and (max-width: 425px) {
+
 }
 
 @media only screen and (max-width: 320px) {
-/* color: red*/
-}
+
+} */
 
 /* ---------- ABOUT ME SECTION ---------- */
 
@@ -98,7 +99,6 @@ body {
     font-size: 2rem;
     color: hsl(9, 84%, 58%);
     text-align: left;
-    /* margin-top: 2rem;*/
     padding-left: 5rem;
 }
 
@@ -120,6 +120,51 @@ body {
     border-radius: 4rem;
     height: auto;
 }
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media only screen and (max-width: 768px) {
+    .about-me-container {
+        width: 100%;
+    }
+
+    .about-me-container h2 {
+        padding-left: 2rem;
+    }
+
+    .about-me {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 2rem;
+    }
+
+    .about-me img {
+        width: 17.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me p {
+        padding-right: 0;
+    }
+} 
+
+/* @media only screen and (max-width: 375px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+} */
 
 /* ---------- PROJECTS FLEXBOX ---------- */
 
@@ -164,7 +209,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .project img, .project p {
-        width: 18rem;
+        width: 17.5rem;
         height: auto;
         font-size: 1rem;
     }
@@ -177,25 +222,19 @@ body {
 
 @media only screen and (max-width: 425px) {
     .project img, .project p {
-        width: 23rem;
+        width: 17.5rem;
         height: auto;
         font-size: 0.9rem;
     }
 }
 
-@media only screen and (max-width: 375px) {
-    .project img, .project p {
-        width: 20rem;
-        height: auto;
-        font-size: 0.9rem;
+/* @media only screen and (max-width: 375px) {
+
     }
 }
 
 
 @media only screen and (max-width: 320px) {
-    .project img, .project p {
-        width: 15rem;
-        height: auto;
-        font-size: 0.75rem;
+
     }
-}
+} */
