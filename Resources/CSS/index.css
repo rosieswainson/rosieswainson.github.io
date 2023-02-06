@@ -202,7 +202,6 @@ body {
 
 .project img:hover {
     width: 21rem;
-
 }
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -212,11 +211,16 @@ body {
         width: 17.5rem;
         height: auto;
         font-size: 1rem;
+        transition: width 400ms;
     }
 
     .project {
         margin: 0.5rem;
         padding: 1rem;
+    }
+
+    .project img:hover {
+        width: 16rem;
     }
 }
 
