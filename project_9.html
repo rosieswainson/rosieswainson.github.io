@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alkatra:wght@700&family=Bebas+Neue&family=Bitter:ital@0;1&family=Bungee+Shade&family=Carter+One&family=Comfortaa:wght@700&family=Cormorant+Garamond:ital@0;1&family=Dela+Gothic+One&family=Fugaz+One&family=Gruppo&family=Inter&family=Karla:wght@300;400;500;600;700&family=Libre+Baskerville:ital@0;1&family=Lobster&family=Lora:ital@0;1&family=Luckiest+Guy&family=Merriweather:ital@0;1&family=Montserrat:wght@300;400;500;700&family=Noto+Sans:ital@0;1&family=Noto+Serif:ital@0;1&family=Nunito+Sans:ital@0;1&family=Open+Sans:ital@0;1&family=Oswald&family=PT+Serif:ital@0;1&family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;700&family=Raleway:wght@300;400;500;700&family=Righteous&family=Roboto+Condensed:ital@0;1&family=Roboto+Slab&family=Roboto:ital@0;1&family=Rowdies:wght@700&family=Shrikhand&family=Source+Sans+Pro:ital@0;1&family=Source+Serif+Pro:ital@0;1&family=Syne:wght@400;600;700;800&family=Work+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./Resources/CSS/project_9.css">
+    <link rel="shortcut icon" href="./Resources/Images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9bf162238a.js" crossorigin="anonymous"></script>
+    <title>Style Guide Generator</title>
+</head>
+<body>
+
+    <!-- MAIN HEADING AND NAVBAR -->
+
+    <section class="heading-section">
+        <div class="navbar" id="heading-background">            
+            <h1 id="main-heading"></h1>
+            <nav class="navbar-menu">
+                <ul>
+                  <li><a href="#generator" class="more">To The Generator <i class="fa fa-caret-down"></i></a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="./index.html">Home</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="mobile-container">
+        <div class="topnav">
+            <a href="#home" class="active">Style Guide Generator</a>
+            <div id="myLinks">
+              <a href="#generator">The Generator </a>
+              <a href="#">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </section>
+
+    <!-- HERO SECTION AND ABOUT THE PROJECT -->
+
+    
+    <section class="hero-banner">
+        <div class="container" id="hero-text-container">
+            <p id="introduction" onclick="introduction()">I decided to build this interactive web design style guide generator as a way to better my skills with the DOM, HTML, CSS and Javascript.<br>
+            The user can interact with the buttons to change the layout, font styles, colours and imagery.<br>
+            Once you have finished reading this, just click on this paragraph and the text will change.</p>
+        </div>
+    </section>
+
+
+    <!-- GENERATOR SECTION -->
+
+
+    <section class="main-generator-section">
+        <div class="flexbox-center">
+            <h1 class="generator-heading fontclass" id="generator">The Generator</h1>
+            <p class="introduction">Click on the buttons to reveal new fonts and colour palettes.<br>
+            Each font will be displayed in it's various heading elements, font emphasises and some body text.<br>
+            Each colour palette generated with display 4 colours.</p>
+        </div>
+
+        <div>
+            <h2 class="generator-heading fontclass">Typography</h2>
+        </div>
+
+        <div class="generator-container-right">
+            <div class="font-about">
+                <div>
+                    <h3 class="displayfont title">Font 1: Display Font</h3>
+                    <p>Display fonts are usually more decorative or unusual than traditional 
+                        serif or sans-serif fonts. They can be used to create a unique brand
+                         identity and can be a good choice for brands that want to stand 
+                        out from the crowd, such as creative agencies or boutique brands.</p>
+                </div>
+                <div class="flexbox">
+                    <div id="what-font-display" class="displayfont">
+                        
+                    </div>
+
+                    <div class="heading-heirachy">
+                        <h1 class="displayfont">H1: Heading</h1>
+                        <h2 class="displayfont">H2: Heading</h2>
+                        <h3 class="displayfont">H3: Heading</h3>
+                        <h4 class="displayfont">H4: Heading</h4>
+                        <h5 class="displayfont">H5: Heading</h5>
+                        <h6 class="displayfont">H6: Heading</h6>
+                    </div>
+
+                    <div>
+                        <p class="displayfont">Regular</p>
+                        <p class="displayfont italic">Italic</p>
+                        <p class="displayfont bold"><strong>Bold</strong></p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="displayfont">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </div>
+            </div>
+
+            <div class="flexbox-center">
+                <button type="button" class="font-btn" id="display-font">Change Display Font</button>
+            </div>
+        </div>
+
+        <div class="generator-container-right">
+            <div class="font-about">
+                <div>
+                    <h3 class="seriffont title">Font 2: Serif Font</h3>
+                    <p>Serif Fonts: Serif fonts have small lines or flourishes at the end of each
+                        letter stroke. They are often associated with tradition, authority, and 
+                       elegance. Serif fonts can be a good choice for brands that want to convey a sense of 
+                       professionalism and sophistication, such as law firms, universities, or luxury fashion brands.</p>
+                </div>
+                <div class="flexbox">
+                    <div id="what-font-serif" class="seriffont">
+           
+                    </div>
+
+                    <div class="heading-heirachy">
+                        <h1 class="seriffont">H1: Heading</h1>
+                        <h2 class="seriffont">H2: Heading</h2>
+                        <h3 class="seriffont">H3: Heading</h3>
+                        <h4 class="seriffont">H4: Heading</h4>
+                        <h5 class="seriffont">H5: Heading</h5>
+                        <h6 class="seriffont">H6: Heading</h6>
+                    </div>
+
+                    <div>
+                        <p class="seriffont">Regular</p>
+                        <p class="seriffont italic">Italic</p>
+                        <p class="seriffont bold">Bold</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="seriffont">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </div>
+            </div>
+            <div class="flexbox-center">
+                <button type="button" class="font-btn" id="san-font">Change Serif Font</button>
+            </div>
+
+        </div>
+
+        <div class="generator-container-right">
+            <div class="font-about">
+                <div>
+                    <h3 class="sanfont title">Font 3: Sans Serif Font</h3>
+                    <p>Sans-Serif Fonts: Sans-serif fonts do not have the small lines or flourishes at the end of each letter stroke. 
+                        They are often associated with modernity, simplicity, and clarity. 
+                        Sans-serif fonts can be a good choice for brands that want to convey a sense of 
+                        innovation, simplicity, and clarity, such as tech companies or startups.</p>
+                </div>
+                <div class="flexbox">
+                    <div id="what-font-sanserif" class="sanfont">
+                      
+                    </div>
+                    <div class="heading-heirachy">
+                        <h1 class="sanfont">H1: Heading</h1>
+                        <h2 class="sanfont">H2: Heading</h2>
+                        <h3 class="sanfont">H3: Heading</h3>
+                        <h4 class="sanfont">H4: Heading</h4>
+                        <h5 class="sanfont">H5: Heading</h5>
+                        <h6 class="sanfont">H6: Heading</h6>
+                    </div>
+
+                    <div>
+                        <p class="sanfont">Regular</p>
+                        <p class="sanfont italic">Italic</p>
+                        <p class="sanfont bold">Bold</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="sanfont">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </div>
+            </div>
+
+            <div class="flexbox-center">
+                <button type="button" class="font-btn" id="sanserif-font">Change Sans Serif Font</button>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="generator-heading fontclass">Colour Palettes</h2>
+        </div>
+
+        <div class="generator-container-right">
+            <div class="font-about">
+                <div>
+                    <h3 class="title">Colours</h3>
+                    <p>A brand's color palette typically consists of 4 colors: 
+                        a primary color that represents the brand's core values, 
+                        a secondary color that complements the primary color, 
+                        an accent color that draws attention to important elements, 
+                        and a neutral color that balances out the other colors. 
+                        When selecting a color palette, it's important to consider 
+                        how the colors work together as a cohesive unit and what 
+                        emotions they might evoke in consumers. By carefully 
+                        selecting a color palette that reflects the brand's 
+                        personality and values, a brand can create a memorable 
+                        and effective visual identity.</p>
+                </div>
+
+                <div class="flexbox">
+                    <ul class="colour-palette"></ul>
+                </div>
+            </div>
+
+            <div class="flexbox-center">
+                <button type="button" class="colour-btn">Change Colour Palette</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="./Resources/Javascript/script_9.js" defer></script>
+</body>
+</html>
