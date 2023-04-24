@@ -4,150 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,200;1,300;1,400&family=Shrikhand&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Resources/CSS/index.css">
     <title>Rosie Swainson Github</title>
     <link rel="shortcut icon" href="./Resources/Images/main-favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9bf162238a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <header class="header-container">
-        <!-- <img href="./index.html" class="rosie-logo" src="./Resources/Images/main-favicon.png" alt="Rosie's logo"> -->
-        <!-- <h1>Rosie Swainson</h1> -->
-        <nav class="nav-bar">
-            <a href="./index.html">
-                <img href="./index.html" class="rosie-logo" src="./Resources/Images/main-favicon.png" alt="Rosie's logo">
-            </a>
-            <a href="#" id="contact">Contact</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="about-me-container">
-            <h2>Hi, I'm Rosie!</h2>
-            <section class="about-me">
-                    <p>I am a web developer based in Siargao, Philippines, pursuing a Full Stack Engineer certification from Codecademy while running my print-on-demand business, Koa Studio.<br>
-                    <br> 
-                    Originally from the UK, I am currently taking a break to experience life and live in a new country.<br> 
-                    <br> 
-                    My background showcases a perfect balance of creativity and logic, which I discovered in web development during my time on furlough in the pandemic.
-                    With it, I combine my creative abilities for designing and logical skills for coding.<br>
-                    <br>
-                    Check out my Codecademy projects below.
-                    </p>
-                    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-                <img src="./Resources/Images/rosie-headshot-2023.JPG" alt="Rosie headshot">
-            </section>    
+    <header class="header-container">
+        <section class="heading-section">
+            <div class="navbar" id="heading-background">            
+                <a href="./index.html" class="desktop-logo">Rosie Swainson</a>
+                <nav class="navbar-menu">
+                    <ul>
+                      <li><a href="#" id="about">About</a></li>
+                      <li><a href="#" id="services">Services</a></li>
+                      <li><a href="#" id="portfolio">Porfolio</a></li>
+                      <li><a href="#" id="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    
+        <section class="mobile-container">
+            <div class="topnav">
+                <a href="./index.html" class="active" id="mobile-logo">Rosie Swainson</a>
+                <div id="myLinks">
+                    <a href="#" id="about">About</a>
+                    <a href="#" id="services">Services</a>
+                    <a href="#" id="portfolio">Porfolio</a>
+                    <a href="#" id="contact">Contact</a>
+                </div>
+    
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </section>
+        </header>
+
+    <main class="main-container">
+        <section class="container main">
+            <p class="hero-info">I am a freelance web developer and digital artist currently based in Siargao, Philippines. 
+                Originally from the UK, I am taking a break to explore new cultures and live in a different country. </p>
         </section>
 
+        <section class="container second with-background">
+            <p class="question">What am I working on?</p>
+        </section>
 
-        <div class="project-container" id="projects">
-            <div class="project-grid-container">
-                    <!-- <div class="project">
-                        <a href="./project_2.html">
-                            <img class="project-image" src="./Resources/Images/Project-2.png" alt="HTML and CSS cheatsheet thumbnail">
-                        </a>
-                        <p><strong>Project Spec: </strong> In this project, you’ll be building your own reference cheat sheet
-                             to help you build more websites in the future!</p>
-                        <p><strong>Skills Used: </strong> HTML tables and basic CSS.</p>     
-                    </div>
-
-                    <div class="project">
-                        <a href="./project_3.html">
-                            <img class="project-image" src="./Resources/Images/Project-3.png" alt="Website style guide thumbnail">
-                        </a>
-                        <p><strong>Project Spec: </strong> In this project, you’ll be building your own basic design system for a website. 
-                            In essence, you’ll be building a website to help you build MORE websites in the future! 
-                            On your site, you’ll collect all the colors, fonts, and some of the repeating styles.</p>
-                        <p><strong>Skills Used: </strong> HTML and CSS hover class.</p>
-                    </div> -->
-
-                    <div class="project">
-                        <a href="./project_4.html">
-                            <img class="project-image" src="./Resources/Images/Project-4.png" alt="Company website thumbnail">
-                        </a>
-                        <p><strong>Project Spec: </strong> In this project, you’ll be using flexbox to design and build the layout for a company’s homepage. 
-                            You can choose to build a new homepage for an existing company or imagine your own dream company!​</p>
-                        <p><strong>Skills Used: </strong> HTML and CSS flexbox.</p>   
-                    </div>
-
-                    <div class="project">
-                        <a href="./project_5.html">
-                            <img class="project-image" src="./Resources/Images/Project-5.png" alt="Responsive website thumbnail">
-                        </a>
-                        <p><strong>Project Spec: </strong> In this project, you’ll be building your own club group page
-                             that will dynamically respond as you adjust the size of your screen!​</p>
-                        <p> <strong>Skills Used: </strong> HTML and CSS flexbox and media queries.</p>
-                    </div>
-
-                    <div class="project">
-                        <a href="./project_6.html">
-                            <img class="project-image" src="./Resources/Images/Project-6.png" alt="Javascipt number guess thumbnail">
-                        </a>
-                        <p><strong>Project Spec: </strong>In this project, you’ll write JavaScript functions to power a small guessing game. 
-                            Your code will run in the browser instead of the terminal, and you can use your browser’s console to help you test your functions and view any syntax errors. </p>
-                        <p><strong>Skills Used: </strong>HTML, CSS and Javascript functions and loops. </p>
-                    </div>
-
-                    <div class="project">
-                        <a href="./project_7.html">
-                            <img class="project-image" src="./Resources/Images/Project-7.png" alt="Positive affirmation thumbnail">
-                        </a>
-                        <p><strong>Project Spec: </strong> For this project, you will build a message generator program. 
-                            Every time a user runs a program, they should get a new, randomized output.</p>
-                        <p><strong>Skills Used: </strong>HTML, CSS and Javascript functions and loops.</p>
-                    </div>
-
-                    <div class="project">
-                        <a href="./project_8.html">
-                            <img class="project-image" src="./Resources/Images/Project-8.png" alt="UX UI thumbnail">
-                        </a>
-                        <p><strong>Project Spec: </strong> You are asked to create two unique wireframe sketches that serve as possible solutions for the product detail page of Ridgeline, 
-                            a popular outdoor clothing company. Your next step is to create high-fidelity wireframes of this design in Figma. 
-                            Then, you will transform the wireframes into an interactive prototype. </p>
-                        <p><strong>Skills Used: </strong>Figma</p>
-                    </div>
-
-                    <div class="project">
-                        <a href="./project_9.html">
-                            <img class="project-image" src="./Resources/Images/Project-9.png" alt="Style Guide Generator thumbnail">
-                        </a>
-                        <p><strong>Project Spec: </strong>  </p>
-                        <p><strong>Skills Used: </strong>HTML, CSS, JS and Figma</p>
-                    </div>
-                    
-                    <!-- <div class="project">
-                        <a class="project-link" href="./project_2.html">Project 2</a>
-                        <h3>CSS Cheatsheet</h3>
-                        <img class="project-image" src="./Resources/Images/CSS Cheatsheet.png" alt="CSS Cheatsheet Screenshot">
-                        <p></p>
-                    </div> -->
-<!-- 
-                    <div class="project">
-                        <a class="project-link" href="./project_2.html">Project 2</a>
-                        <h3>CSS Cheatsheet</h3>
-                        <img class="project-image" src="./Resources/Images/CSS Cheatsheet.png" alt="CSS Cheatsheet Screenshot">
-                        <p></p>
-                    </div> -->
-
-               
-
-                <!-- Extras 
-                <div class="project-7">
-
-                </div>
-
-                <div class="project-8">
-                
-
-                </div>
-                -->
-
+        <section class="container desktop-layout">
+            <div class="with-background">
+                <p>I am designing and creating websites using Wordpress, Squarespace and Webflow.</p>
             </div>
-        </div>
+
+            <div class="with-background">
+                <p>I am pursuing a Full Stack Engineering certification from Codecademy.</p>
+            </div>
+
+            <div class="with-background">
+                <p>I express myself through digital art through my print-on-demand business, Koa Studio.</p>
+            </div>
+        </section>
 
     </main>
+
+    <footer class="footer-container">
+        <div>
+            <span><i class="fa-regular fa-copyright"></i>Rosie Swainson</span>
+        </div>
+        <div>
+            <i class="fa-brands fa-linkedin">
+            <a href="#"></a>
+            </i>
+            <i class="fa-brands fa-github">
+            <a href="#"></a>
+            </i>
+            <i class="fa-regular fa-envelope">
+            <a href="#"></a>
+            </i>
+        </div>
+
+    </footer>
     
+    <script src="./Resources/Javascript/index.js" defer></script>
+
 </body>
 </html>

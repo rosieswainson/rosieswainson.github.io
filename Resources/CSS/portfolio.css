@@ -1,25 +1,21 @@
+/* MOBILE FIRST */
 /* ---------- UNIVERSAL STYLES ---------- */
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
-    /* max-width: 1920px; */
-    height: 100vh;
+    font-family: 'Syne', sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    font-family: 'Syne', sans-serif;
-    font-weight: 400;
-    color: #242424;
-    /* text-align: center; */
-    text-decoration: none;
-    background-image: url(../Images/Rosie-Swainson-Web-Developer.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-color: #F9F6FF;
 }
+
 
 ul {
     margin: 0px;
@@ -56,10 +52,6 @@ button {
     display: none;
   }
 
-  #myLinks {
-    background-color: #DFD3FB;
-  }
-
   #mobile-logo {
     font-size: 1rem;
     font-weight: 800;
@@ -91,6 +83,10 @@ button {
   }
   
   .active {
+    background-image: url(../Images/Rosie-Swainson-Web-Developer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     cursor: pointer;
     color: #F9F6FF;
   }
@@ -116,6 +112,10 @@ button {
         align-items: center;
         top: 0;
         left: 0; 
+        background-image: url(../Images/Rosie-Swainson-Web-Developer.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;        
         color: #F9F6FF;
         padding: 10px;
     }
@@ -156,77 +156,68 @@ button {
     }
   }
 
-/* ---------- ABOUT ME SECTION ---------- */
+
+
+/* ---------- PROJECT STYLES ---------- */
+
+/* MOBILE */
 
 .container {
     text-align: center;
-    margin: 1em 2em;
 }
 
-.main {
+.heading {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 800;
+    margin-top: 2em;
 }
 
-.second {
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-.with-background {
+.body-text {
+    padding: 1em 1em;
+    margin: 0 1em;
     background-color: #DFD3FB;
-    padding: 0.5em 1em;
     border-radius: 2rem;
-    margin: 1em 1.5em;
-    box-shadow: 0 15px 30px rgba(122, 67, 249,0.6);
 }
 
-@media only screen and (min-width: 450px) {
-    .main-container {
-        max-width: 1440px;
-        width: 80%;
-        margin: 2em auto;
-    }
+.project-container,
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
 
-    .hero-info {
-        margin: 2em auto;
+.project-grid-container {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
-    }
+.project {
+    margin: 1rem;
+    padding: 1rem;
+}
 
-    .main {        
-        /* margin: 4em auto; */
-        font-size: 3rem;
-    }
+.project-image {
+    width: 15rem;
+}
 
-    .question {
-        font-size: 2rem;
+.project img {
+    border-radius: 2.5rem;
+}
 
-    }
+/* DESKTOP */
 
-    .second {
-        width: 25em;
-    }
-
-    .with-background {
-        font-size: 1.25rem;
-        padding: 0.25em 0.5em;
-        margin-top: 2em;
-        box-shadow: 0 15px 30px rgba(122, 67, 249,0.6);
-    }
-
+@media only screen and (min-width: 780px) {
     .container {
-        margin: 0 auto;
+        width: 60%;
     }
 
-    .desktop-layout {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 4em;
+    .project-image {
+        width: 20rem;
     }
 }
-
 
 
 /* ---------- FOOTER STYLES ---------- */
