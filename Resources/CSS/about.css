@@ -1,29 +1,27 @@
+/* MOBILE FIRST */
 /* ---------- UNIVERSAL STYLES ---------- */
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
-    /* max-width: 1920px; */
-    height: 100vh;
+    font-family: 'Syne', sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    font-family: 'Syne', sans-serif;
-    font-weight: 400;
-    color: #242424;
-    /* text-align: center; */
-    text-decoration: none;
-    background-image: url(../Images/Rosie-Swainson-Web-Developer.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-color: #F9F6FF;
 }
 
+
 ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -56,14 +54,10 @@ button {
     display: none;
   }
 
-  #myLinks {
-    background-color: #DFD3FB;
-  }
-
   #mobile-logo {
     font-size: 1rem;
     font-weight: 800;
-    color: #242424;
+    color: #F9F6FF;
   }
   
   .topnav a {
@@ -91,12 +85,16 @@ button {
   }
   
   .active {
+    background-image: url(../Images/Rosie-Swainson-Web-Developer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     cursor: pointer;
     color: #F9F6FF;
   }
 
   .fa-bars {
-    color: #242424;
+    color: #F9F6FF;
   }
 
 /* ---------- NAV BAR MEDIA ---------- */
@@ -116,7 +114,11 @@ button {
         align-items: center;
         top: 0;
         left: 0; 
-        color: #242424;
+        background-image: url(../Images/Rosie-Swainson-Web-Developer.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;        
+        color: #F9F6FF;
         padding: 10px;
     }
 
@@ -128,7 +130,7 @@ button {
       
     /* Menu styles */
     .desktop-logo {
-        color: #242424;
+        color: #F9F6FF;
         font-family: 'Syne', sans-serif;
         font-weight: 800;
         font-size: 1.5rem;
@@ -148,7 +150,7 @@ button {
     }
       
     .navbar-menu a {
-        color: #242424;
+        color: #F9F6FF;
         font-family: 'Syne', sans-serif;
         font-weight: 600;
         text-decoration: none;
@@ -156,77 +158,60 @@ button {
     }
   }
 
-/* ---------- ABOUT ME SECTION ---------- */
+/* ---------- MAIN BODY ---------- */
 
-.container {
+.heading {
     text-align: center;
-    margin: 1em 2em;
-}
-
-.main {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 800;
+    margin-top: 2em;
 }
 
-.second {
+.sub-heading {
     font-size: 1.25rem;
     font-weight: 600;
+    margin-bottom: 1em;
 }
 
-.with-background {
+.main-container {
+    max-width: 1440px;
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.body-text, 
+.headshot,
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em;
+    margin: 1em 1em;
+    /* margin: 0 auto; */
+}
+
+.skills {
     background-color: #DFD3FB;
-    padding: 0.5em 1em;
-    border-radius: 2rem;
-    margin: 1em 1.5em;
-    box-shadow: 0 15px 30px rgba(122, 67, 249,0.6);
+    border-radius: 2.5rem;
+    margin-bottom: 2em;
+}
+
+.rosie-headshot {
+    width: 15rem;
+    border-radius: 2.5rem;
 }
 
 @media only screen and (min-width: 450px) {
-    .main-container {
-        max-width: 1440px;
-        width: 80%;
-        margin: 2em auto;
-    }
-
-    .hero-info {
-        margin: 2em auto;
-
-    }
-
-    .main {        
-        /* margin: 4em auto; */
-        font-size: 3rem;
-    }
-
-    .question {
-        font-size: 2rem;
-
-    }
-
-    .second {
-        width: 25em;
-    }
-
-    .with-background {
-        font-size: 1.25rem;
-        padding: 0.25em 0.5em;
-        margin-top: 2em;
-        box-shadow: 0 15px 30px rgba(122, 67, 249,0.6);
-    }
-
-    .container {
-        margin: 0 auto;
-    }
-
-    .desktop-layout {
+    .right-section {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
         align-items: center;
-        margin-bottom: 4em;
     }
-}
 
+
+
+}
 
 
 /* ---------- FOOTER STYLES ---------- */
