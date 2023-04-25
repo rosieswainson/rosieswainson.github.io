@@ -233,6 +233,10 @@ button {
     .project-image {
         width: 20rem;
     }
+    
+    .project img:hover {
+        box-shadow:  0 0 20px rgba(71, 55, 242, 0.6);
+    }
 }
 
 
@@ -259,4 +263,9 @@ i {
 
 i a {
     cursor: pointer;
+}
+
+.fa-brands,
+.fa-regular {
+    color: #242424;
 }

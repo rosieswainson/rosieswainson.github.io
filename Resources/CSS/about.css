@@ -264,3 +264,8 @@ i {
 i a {
     cursor: pointer;
 }
+
+.fa-brands,
+.fa-regular {
+    color: #242424;
+}

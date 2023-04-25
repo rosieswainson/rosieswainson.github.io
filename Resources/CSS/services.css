@@ -218,6 +218,10 @@ button {
     margin: 2em 0;
 }
 
+.email {
+    color: #242424;
+}
+
 
 @media only screen and (min-width: 780px) {
     .body-container {
@@ -233,6 +237,8 @@ button {
         box-shadow: inset 0 0 25px rgba(71, 55, 242, 0.6);
 
     }
+
+
 
 }
 
@@ -260,4 +266,9 @@ i {
 
 i a {
     cursor: pointer;
+}
+
+.fa-brands,
+.fa-regular {
+    color: #242424;
 }
