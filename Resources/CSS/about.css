@@ -16,6 +16,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F9F6FF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -176,7 +179,6 @@ button {
 .main-container {
     max-width: 1440px;
     width: 100%;
-    /* margin: 0 auto; */
 }
 
 .body-text, 
@@ -188,7 +190,6 @@ button {
     justify-content: center;
     padding: 1em 1em;
     margin: 1em 1em;
-    /* margin: 0 auto; */
 }
 
 .skills {
@@ -226,8 +227,6 @@ button {
         align-items: center;
     }
 
-
-
 }
 
 
@@ -243,7 +242,7 @@ button {
     align-items: center;
     justify-content: space-between;
     padding: 1em 1em;
-    margin: 0 auto;
+    margin-top: auto;
 }
 
 i {
