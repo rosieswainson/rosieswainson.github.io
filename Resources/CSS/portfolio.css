@@ -227,7 +227,7 @@ button {
 
 @media only screen and (min-width: 780px) {
     .container {
-        width: 60%;
+        width: 50%;
     }
 
     .project-image {
