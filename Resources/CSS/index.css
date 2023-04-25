@@ -2,23 +2,24 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    /* max-width: 1920px; */
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
-    font-family: 'Syne', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #242424;
     /* text-align: center; */
     text-decoration: none;
-    background-image: url(../Images/Rosie-Swainson-Web-Developer.jpg);
+    background-image: url(../Images/Rosie-Swainson-Web-Developer\ copy.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 ul {
@@ -61,6 +62,7 @@ button {
   }
 
   #mobile-logo {
+    font-family: 'Syne', sans-serif;
     font-size: 1rem;
     font-weight: 800;
     color: #242424;
@@ -158,12 +160,14 @@ button {
 
 /* ---------- ABOUT ME SECTION ---------- */
 
+
 .container {
     text-align: center;
     margin: 1em 2em;
 }
 
 .main {
+    font-family: 'Syne', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -178,7 +182,7 @@ button {
     padding: 0.5em 1em;
     border-radius: 2rem;
     margin: 1em 1.5em;
-    box-shadow: 0 15px 30px rgba(122, 67, 249,0.6);
+    box-shadow: inset 0 0 25px rgba(71, 55, 242, 0.6);
 }
 
 @media only screen and (min-width: 450px) {
@@ -188,30 +192,27 @@ button {
         margin: 2em auto;
     }
 
-    .hero-info {
+    #hero-info {
         margin: 2em auto;
-
     }
 
     .main {        
-        /* margin: 4em auto; */
         font-size: 3rem;
     }
 
     .question {
         font-size: 2rem;
-
     }
 
     .second {
-        width: 25em;
+        width: 22em;
     }
 
     .with-background {
         font-size: 1.25rem;
-        padding: 0.25em 0.5em;
+        padding: 1em 1em;
         margin-top: 2em;
-        box-shadow: 0 15px 30px rgba(122, 67, 249,0.6);
+        box-shadow: inset 0 0 15px rgba(71, 55, 242, 0.6);
     }
 
     .container {
@@ -234,14 +235,13 @@ button {
 
 .footer-container {
     font-weight: 600;
-    background-color: #DFD3FB;
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 1em 1em;
-    margin: 0 auto;
+    margin-top: auto;
 }
 
 i {
