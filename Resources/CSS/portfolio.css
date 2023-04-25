@@ -179,20 +179,20 @@ button {
 }
 
 .heading {
+    text-align: center;
     font-size: 1.5rem;
     font-weight: 800;
-    margin: 1.5em;
+    margin-top: 2em;
 }
 
 .body-text {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     padding: 1em 1em;
-    margin: 0 1em;
+    margin: 2rem 1rem;
     background-color: #DFD3FB;
     border-radius: 2rem;
     box-shadow: inset 0 0 15px rgba(71, 55, 242, 0.6);
-
 }
 
 .project-container,

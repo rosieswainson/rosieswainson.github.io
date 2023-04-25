@@ -1,3 +1,4 @@
+/* MOBILE FIRST */
 /* ---------- UNIVERSAL STYLES ---------- */
 
 * {
@@ -6,28 +7,28 @@
     padding: 0;
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+html {
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #242424;
-    /* text-align: center; */
-    text-decoration: none;
-    background-image: url(../Images/Rosie-Swainson-Web-Developer\ copy.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+body {
+    font-family: 'Syne', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F6FF;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -60,15 +61,10 @@ button {
     display: none;
   }
 
-  #myLinks {
-    background-color: #DFD3FB;
-  }
-
   #mobile-logo {
-    font-family: 'Syne', sans-serif;
     font-size: 1rem;
     font-weight: 800;
-    color: #242424;
+    color: #F9F6FF;
   }
   
   .topnav a {
@@ -96,12 +92,16 @@ button {
   }
   
   .active {
+    background-image: url(../Images/Rosie-Swainson-Web-Developer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     cursor: pointer;
     color: #F9F6FF;
   }
 
   .fa-bars {
-    color: #242424;
+    color: #F9F6FF;
   }
 
 /* ---------- NAV BAR MEDIA ---------- */
@@ -121,7 +121,11 @@ button {
         align-items: center;
         top: 0;
         left: 0; 
-        color: #242424;
+        background-image: url(../Images/Rosie-Swainson-Web-Developer.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;        
+        color: #F9F6FF;
         padding: 10px;
     }
 
@@ -133,7 +137,7 @@ button {
       
     /* Menu styles */
     .desktop-logo {
-        color: #242424;
+        color: #F9F6FF;
         font-family: 'Syne', sans-serif;
         font-weight: 800;
         font-size: 1.5rem;
@@ -153,7 +157,7 @@ button {
     }
       
     .navbar-menu a {
-        color: #242424;
+        color: #F9F6FF;
         font-family: 'Syne', sans-serif;
         font-weight: 600;
         text-decoration: none;
@@ -168,7 +172,7 @@ button {
     }
   }
 
-/* ---------- ABOUT ME SECTION ---------- */
+  /* ---------- MAIN SECTION ---------- */
 
 .main-container {
     max-width: 1440px;
@@ -176,90 +180,56 @@ button {
     margin: 0 auto;
 }
 
-.hero-container {
-    margin: 1.5rem 2rem;
-}
-
-#hero-text {
-    text-align: center;
-    font-family: 'Syne', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.info-container {
-    background-color: #F9F6FF;
-    padding: 1rem 0;
-}
-
-#question {
-    font-size: 1.25rem;
-    font-weight: 600;
-
-}
-
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #DFD3FB;
-    border-radius: 2.5rem;
-    padding: 1em 1em;
-    margin: 2em 1em;
-    box-shadow: inset 0 0 25px rgba(71, 55, 242, 0.6);
 }
 
-.question-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #DFD3FB;
-    border-radius: 2.5rem;
-    padding: 1em 1em;
-    margin: 2em 1em;
-    box-shadow: inset 0 0 25px rgba(71, 55, 242, 0.6);
+.heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 2em;
 }
 
 .body-text {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     text-align: center;
+    padding: 1em 1em;
+    margin: 2rem 1rem;
+    background-color: #DFD3FB;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 15px rgba(71, 55, 242, 0.6);
+}
+
+#email-icon {
+    margin-bottom: 2rem;
+}
+
+.email {
+    color: #242424;
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #DFD3FB;
+    padding: 1em;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 15px rgba(71, 55, 242, 0.6);
 }
 
 
 
-@media only screen and (min-width: 450px) {
-    #hero-text {        
-        font-size: 3rem;
-        margin: 2rem 8rem;
-    }
-
-    #question {
-        font-size: 2rem;
-    }
-
-    .desktop-layout {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .question-container {
-        width: 50%;
-        margin: 2rem auto;
-    }
-}
 
 
-
-/* ---------- FOOTER STYLES ---------- */
-
+  /* ---------- FOOTER SECTION ---------- */
 
 .footer-container {
     font-weight: 600;
+    background-color: #DFD3FB;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -267,6 +237,8 @@ button {
     justify-content: space-between;
     padding: 1em 1em;
     margin-top: auto;
+    box-shadow: inset 0 0 15px rgba(71, 55, 242, 0.6);
+
 }
 
 i {
