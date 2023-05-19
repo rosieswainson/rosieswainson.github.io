@@ -219,7 +219,7 @@ button {
     .main-container {
         max-width: 1440px;
         width: 100%;
-        margin: 0 auto;
+        margin: 3rem auto;
         display: flex;
         flex-direction: row;
         align-items: start;
@@ -255,7 +255,6 @@ button {
     padding: 1em 1em;
     margin-top: auto;
     box-shadow: inset 0 0 15px rgba(71, 55, 242, 0.6);
-
 }
 
 i {

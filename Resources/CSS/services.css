@@ -179,7 +179,7 @@ button {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 800;
-    margin-top: 2em;
+    margin-top: 3rem;
 }
 
 .sub-heading {
@@ -224,12 +224,16 @@ button {
 
 
 @media only screen and (min-width: 780px) {
+    .main-container {
+        margin: 3rem 0;
+    }
+
     .body-container {
         display: flex;
         flex-direction: row;
         align-items: start;
         justify-content: space-evenly;
-        margin: 3em 0;
+        margin: 3rem 0;
     }
 
     .container {
